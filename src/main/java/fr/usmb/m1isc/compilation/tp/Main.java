@@ -11,7 +11,6 @@ public class Main {
 	    yy = new LexicalAnalyzer(new FileReader(args[0])) ;
 	else
 	    yy = new LexicalAnalyzer(new InputStreamReader(System.in)) ;
-	@SuppressWarnings("deprecation")
 	parser p = new parser (yy);
 	p.parse( );
     }
