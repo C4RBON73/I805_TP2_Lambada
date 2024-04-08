@@ -51,7 +51,7 @@ public class AssemblerGenerator {
 
             // S'il s'agit d'une boucle while
             if (data.getRacine() == Operator.WHILE) {
-                tmp += "debut_while_1:\n"; // TODO : voir si le 1 doit s'incrémenter à chaque while
+                tmp += "debut_while_1:\n";
                 tmp += getCodeSegment(data.getFilsGauche()); // Condition du while
                 tmp += "\tjz sortie_while_1\n";
                 tmp += getCodeSegment(data.getFilsDroit()); // Contenu de la boucle
