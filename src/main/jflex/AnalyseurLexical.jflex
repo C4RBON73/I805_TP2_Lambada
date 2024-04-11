@@ -61,6 +61,7 @@ comment     = {comment1}|{comment2}
 {and}       { return new Symbol(sym.AND, yyline, yycolumn) ;}
 {or}        { return new Symbol(sym.OR, yyline, yycolumn) ;}
 {not}       { return new Symbol(sym.NOT, yyline, yycolumn) ;}
+{func}      { return new Symbol(sym.FUNC, yyline, yycolumn) ;}
 "="         { return new Symbol(sym.EGAL, yyline, yycolumn) ;}
 "<"         { return new Symbol(sym.GT, yyline, yycolumn) ;}
 "<="        { return new Symbol(sym.GTE, yyline, yycolumn) ;}

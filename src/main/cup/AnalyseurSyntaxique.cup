@@ -74,7 +74,7 @@ expression ::= expr:e {: RESULT =(Arbre) e; :}
              | LET IDENT:nom EGAL expr:e        {: RESULT = new Arbre(Operator.LET, new Feuille(nom),(Arbre) e); :}
              | WHILE expr:cond DO expression:e  {: RESULT = new Arbre(Operator.WHILE,(Arbre) cond,(Arbre) e); :}
              | IF expr:cond THEN expression:a1 ELSE expression:a2 {: RESULT = new Arbre(Operator.IF,(Arbre) a1,(Arbre) a2); :}
-             | error // reprise d'erreurs
+             | error
              ;
 
 // expression arithmetiques et logiques
