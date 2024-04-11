@@ -36,6 +36,7 @@ nil         = "nil" | "NIL"
 not         = "not" | "NOT"
 and         = "and" | "AND"
 or          = "or" | "OR"
+func        = "func" | "FUNC"
 
 // un identifiant commence par une lettre suivit d'un charactere alphanumerique (lettre/chiffre/underscore)
 ident       = [:letter:]\w*
